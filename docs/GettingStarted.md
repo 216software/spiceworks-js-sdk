@@ -1,23 +1,47 @@
 # Getting Started
 
-This doc will cover the steps you need to take to create a cloud app and make it available to the masses to install in their Spiceworks environment. We'll use an actual example to show you how to create a cloud app along the way.
+This doc will cover the steps you need to take to create a cloud app and
+make it available to the masses to install in their Spiceworks
+environment. We'll use an actual example to show you how to create a
+cloud app along the way.
 
 ### Installing Spiceworks
 
-Before starting to build your cloud app, you first need to install the [Spiceworks Desktop: Developer Edition][Desktop Dev Download].  The Spiceworks Desktop is where users will ultimately be installing and loading your cloud app.  The developer edition of the Spiceworks Desktop has some small admin features that make it easier to build and test your cloud app during development, before it's been published to the Spiceworks App Center.
+Before starting to build your cloud app, you first need to install the
+[Spiceworks Desktop: Developer Edition][Desktop Dev Download].  The
+Spiceworks Desktop is where users will ultimately be installing and
+loading your cloud app.  The developer edition of the Spiceworks Desktop
+has some small admin features that make it easier to build and test your
+cloud app during development, before it's been published to the
+Spiceworks App Center.
 
-Like the IT-pro version of the Spiceworks Desktop, the developer edition will need to be installed in a Windows environment (Note: We are currently working on development tools that avoid this requirement).
+Like the IT-pro version of the Spiceworks Desktop, the developer edition
+will need to be installed in a Windows environment (Note: We are
+currently working on development tools that avoid this requirement).
 
 Install the [Spiceworks Desktop: Developer Edition][Desktop Dev Download].
 
 ### Create a place for your app to live
 
-Once you've installed Spiceworks, we'll need to find a home for your app. A Spiceworks app is just a website, so make sure that your web app is being served somewhere so that it can be accessed by Spiceworks.  This means that you must have a local or a remote web server serving your web application so that it can be loaded within Spiceworks. At this point, you can just create a framework for the app. You'll just need a host URL to get the app creation process started within Spiceworks.
+Once you've installed Spiceworks, we'll need to find a home for your
+app. A Spiceworks app is just a website, so make sure that your web app
+is being served somewhere so that it can be accessed by Spiceworks.
+This means that you must have a local or a remote web server serving
+your web application so that it can be loaded within Spiceworks. At this
+point, you can just create a framework for the app. You'll just need a
+host URL to get the app creation process started within Spiceworks.
 
 #### Example
-In this example, we create a single-page application in a Github Gist. If you're not familiar with Github, it basically just gives you a place to store code. You can then use sites like http://bl.ocks.org to then render that code in a usable format for Spiceworks.
 
-1) Go to <https://gist.github.com> to create a Gist. It will ask you if you want to save the Gist as "secret" or "public". Either one works just fine. We can create the framework for the ubiquitous "Hello world!" application like so:
+In this example, we create a single-page application in a Github Gist.
+If you're not familiar with Github, it basically just gives you a place
+to store code. You can then use sites like http://bl.ocks.org to then
+render that code in a usable format for Spiceworks.
+
+1) Go to <https://gist.github.com> to create a Gist. It will ask you if
+you want to save the Gist as "secret" or "public". Either one works just
+fine. We can create the framework for the ubiquitous "Hello world!"
+application like so:
 
 ``` html
    <!DOCTYPE html>
@@ -28,7 +52,9 @@ In this example, we create a single-page application in a Github Gist. If you're
    </html>
 ```
 2) Save the Gist file as **index.html**.
+
 3) Make sure that your Gist is working properly by testing it in a browser using <http://bl.ocks.org>. So the Gist I created on Github (at <https://gist.github.com/babbtx/dab075639fef532d612a>) can be tested by viewing it at <http://bl.ocks.org/babbtx/raw/dab075639fef532d612a/>.
+
    (**Note:** the http://bl.ocks.org site caches the page for several minutes, so changes you make to the source may not be immediately reflected in the application.
 
 Go [here][Card Examples] for some simple examples of Spiceworks apps.
